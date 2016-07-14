@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "216365722404",
+    "firebase_url": "https://news-reader-cf740.firebaseio.com",
+    "project_id": "news-reader-cf740",
+    "storage_bucket": "news-reader-cf740.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216365722404:android:b96f37902eef42e4",
+        "android_client_info": {
+          "package_name": "madalin.newsreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216365722404-f3t6pk6uqqtoe92kvqp4c6ikun8pr2a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkLOk9Z0WLdP3SnUYRjeJMq533dWS8zvk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

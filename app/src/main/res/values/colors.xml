@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#10C73B</color>
+    <color name="colorPrimaryDark">#0BB031</color>
+    <color name="colorPressed">#79FA4D</color>
+    <color name="colorAccent">#FFBF00</color>
+    <color name="newsBackground">#F7F7F7</color>
+    <color name="newsTextColor">#000000</color>
+    <color name="mainBackground">#DBDBDB</color>
+    <color name="commentColor">#E6E6E6</color>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainBackground">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_item"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_action_name"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titlul"
+        android:layout_alignTop="@+id/image"
+        android:layout_toEndOf="@+id/image"
+        android:layout_toStartOf="@+id/iv_fav"
+        android:textColor="@color/newsTextColor"
+        android:lines="1"
+        android:padding="8dp"
+        android:ellipsize="end"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/by"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story by: "
+        android:textSize="15sp"
+        android:layout_below="@+id/title"
+        android:layout_toEndOf="@+id/image"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/newsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newsTextColor"
+        android:text="Stire stire stire"
+        android:layout_below="@+id/title"
+        android:minLines="2"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_toEndOf="@+id/by"
+        android:layout_toStartOf="@+id/btn_share"/>
+    <ImageView
+        android:id="@+id/iv_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/image"
+        android:paddingEnd="4dp"
+        android:src="@drawable/ic_fav"
+
+         />
+
+    <ImageView
+        android:id="@+id/btn_share"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:paddingEnd="4dp"
+        android:src="@drawable/ic_share"
+        android:layout_alignBottom="@+id/newsText"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,66 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            />
+         <TextView
+        android:id="@+id/nothing_saved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No saved news."
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+             android:gravity="center"
+        android:textSize="30sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:title="@string/app_name"
+                app:titleTextColor="@android:color/white"
+                android:gravity="top">
+                <LinearLayout
+                    android:id="@+id/main_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Saved news"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layoutManager = "LinearLayoutManager"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
